@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Transfer, Switch } from 'antd';
 import "antd/dist/antd.css"
-import {Row , Col} from "antd"
 import styles from "./App.module.css"
 import {tranformUrl} from "./base";
 
