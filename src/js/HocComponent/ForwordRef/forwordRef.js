@@ -1,4 +1,5 @@
 import React , {Component} from "react"
+import ReactDOM from "react-dom";
 
 class Button extends Component{
     render(){
@@ -18,12 +19,19 @@ function HOC(Wraped) {
         }
     }
 
-    return React.forwardRef((props,ref)=>{
+    const Re =  React.forwardRef((props,ref)=>{
         return <NewWraped {...props} forwardRef={ref} />
-    })
+    });
+
+    return Re
 
 }
 
 const HHH = HOC(Button);
 
 export  default  HHH
+//
+// ReactDOM.render(<HHH
+//     ref={(dom) => {
+//         console.log(dom);
+//     }}/>, document.getElementById('root'));
