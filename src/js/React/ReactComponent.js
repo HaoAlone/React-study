@@ -1,4 +1,5 @@
 import React , {Component} from "react"
+import ReactDOM from "react-dom";
 export default class Fd extends Component {
     constructor(props){
         super(props);
@@ -33,3 +34,27 @@ export default class Fd extends Component {
         )
     }
 }
+
+// class PP extends Component {
+//     constructor(props){
+//         super(props);
+//         this.state = {
+//             num:1
+//         }
+//     }
+//
+//     render() {
+//         return (
+//             <>
+//                 <button onClick={()=>this.setState({num:this.state.num+1})}>点击</button>
+//                 <Fd  num={this.state.num}/>
+//             </>
+//
+//         );
+//     }
+// }
+//
+// ReactDOM.render(
+//     <PP />,
+//     document.getElementById('root')
+// );
